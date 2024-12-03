@@ -65,7 +65,7 @@ export const Cart = () => {
                     </div>
                   </div>
                 </TableCell>
-                <TableCell align="right">${item.price.toFixed(2)}</TableCell>
+                <TableCell align="right">LKR {item.price.toFixed(2)}</TableCell>
                 <TableCell align="center">
                   <div className="flex items-center justify-center gap-2">
                     <IconButton
@@ -84,7 +84,7 @@ export const Cart = () => {
                   </div>
                 </TableCell>
                 <TableCell align="right">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  LKR {(item.price * item.quantity).toFixed(2)}
                 </TableCell>
                 <TableCell align="center">
                   <IconButton
@@ -102,7 +102,7 @@ export const Cart = () => {
 
       <Box className="mt-8 flex flex-col items-end">
         <Typography variant="h5" className="mb-4">
-          Total: ${total.toFixed(2)}
+          Total: LKR {total.toFixed(2)}
         </Typography>
         <Button variant="contained" color="primary" size="large">
           Proceed to Checkout

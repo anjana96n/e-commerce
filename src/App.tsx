@@ -9,6 +9,7 @@ import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Cart } from './pages/Cart';
 import { theme } from './theme';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <BrowserRouter>
-            <Layout>
+            <Layout sx={{ paddingBottom: '4rem' }}>
               <Routes>
                 <Route path="/" element={<ProductList />} />
                 <Route path="/login" element={<Login />} />
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/cart" element={<Cart />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
+              <Footer />
             </Layout>
           </BrowserRouter>
         </CartProvider>
