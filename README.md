@@ -41,13 +41,13 @@ Start the Application:
 
 bash
 Copy code
-npm start
+npm run dev
 Or, if using Yarn:
 
 bash
 Copy code
 yarn start
-Open in Browser: Navigate to http://localhost:3000 to view the application.
+Open in Browser: Navigate to http://localhost:5173 to view the application.
 
 Folder Structure
 bash
