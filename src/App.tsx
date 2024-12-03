@@ -18,11 +18,12 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <BrowserRouter>
-            <Layout sx={{ paddingBottom: '4rem' }}>
-              <Routes>
-                <Route path="/" element={<ProductList />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/signup" element={<Signup />} />
+            <Layout>
+              <div style={{ paddingBottom: '4rem' }}/>
+                <Routes>
+                  <Route path="/" element={<ProductList />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/signup" element={<Signup />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
