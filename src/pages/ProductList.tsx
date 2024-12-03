@@ -78,7 +78,7 @@ export const ProductList = () => {
                   {product.description}
                 </Typography>
                 <Typography variant="h6" color="primary" className="mb-4">
-                  ${product.price.toFixed(2)}
+                LKR {product.price.toFixed(2)}
                 </Typography>
                 <Button
                   variant="contained"
